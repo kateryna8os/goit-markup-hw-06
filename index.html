@@ -301,7 +301,7 @@
                 src="./images/marketing.jpg"
                 alt="marketing"
                 width="270"
-              />  
+              />
               <div class="team-jpg">
                 <h3 class="team-player-title">Микола Тарасов</h3>
                 <p class="team-text">Marketing</p>
@@ -556,13 +556,62 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is--hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-x-close-icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-x-close-black"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="name">Імʼя</label>
+            <input
+              type="text"
+              class="modal-input"
+              placeholder=""
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+
+          <div class="modal-field">
+            <label for="tel">Телефон</label>
+            <input
+              type="tel"
+              class="modal-input"
+              placeholder=""
+              name="tel"
+              id="tel"
+              required
+            />
+          </div>
+
+          <div class="modal-field">
+            <label for="email">Пошта</label>
+            <input
+              type="email"
+              class="modal-input"
+              placeholder=""
+              name="email"
+              id="email"
+            />
+          </div>
+
+          <div class="modal-field">
+            <label for="comment">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="modal-comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+
+          <button type="submit">submit</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
