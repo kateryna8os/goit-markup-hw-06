@@ -797,7 +797,6 @@ body {
   outline: transparent;
 }
 
-.footer-singup-input:hover,
 .footer-singup-input:focus,
 .footer-singup-input:active {
   border: var(--accent-color);
