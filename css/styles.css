@@ -13,7 +13,7 @@
   --bgc-top-text: rgba(47, 48, 58, 0.8);
   --x-close: rgba(0, 0, 0, 0.1);
 }
-
+ 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-title-color);
