@@ -637,6 +637,9 @@ body {
   color: var(--main-bottom-color);
   letter-spacing: 0.03em;
 }
+.footer-contact {
+  flex-grow: 1;
+}
 
 .footer-web {
   color: var(--accent-color);
@@ -857,11 +860,11 @@ body {
 }
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   opacity: 1;
 
@@ -941,7 +944,14 @@ body {
   color: var(--main-title-color);
 }
 
+.modal-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .modal-label {
+  display: block;
+  margin-bottom: 4pt;
   font-size: 12px;
   line-height: 1.16;
 
@@ -971,7 +981,6 @@ body {
 
 .modal-icon {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .modal-input-icon {
@@ -988,11 +997,17 @@ body {
   fill: var(--accent-color);
 }
 
+.modal-field-comment {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .modal-comment {
+  display: block;
+
   width: 448px;
   height: 120px;
 
-  margin-bottom: 20px;
   padding-left: 16px;
   padding-top: 12px;
   padding-right: 16px;
@@ -1023,6 +1038,14 @@ body {
   border-color: var(--accent-color);
 }
 
+.contract-text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  color: var(--main-bottom-color);
+}
+
 .contract-link {
   margin-left: 5px;
   font-size: 14px;
@@ -1035,6 +1058,7 @@ body {
 
 .modal-check-text {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1049,18 +1073,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .modal-icon-vector {
   fill: transparent;
 }
 
 .modal-check:checked + .modal-check-text span {
-  background-color: var(--accent-color);
-  border: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-check:focus + .modal-check-text span {
   background-color: var(--accent-color);
   border: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
